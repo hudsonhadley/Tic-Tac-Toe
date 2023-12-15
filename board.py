@@ -1,9 +1,12 @@
-class Board:
+import pygame
+
+class Board(pygame.sprite.Sprite):
     """
     A class to represent a tic-tac-toe board. It holds the spots.
     """
 
     def __init__(self):
+        super.__init__()
         self.spots = [["" for i in range(3)] for j in range(3)]
 
 

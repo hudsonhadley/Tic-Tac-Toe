@@ -18,8 +18,13 @@ while playing:
         if event.type == pygame.QUIT:
             playing = False
 
-    screen.fill(BACKGROUND_COLOR)
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_ESCAPE:
+                playing = False
 
+
+
+    screen.fill(BACKGROUND_COLOR)
 
 
     pygame.display.flip()
